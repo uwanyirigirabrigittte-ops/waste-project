@@ -1,0 +1,96 @@
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff !important; /* Force true white background */
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+/* Page heading styled dark and heavy */
+.header h2 {
+  color: #111111 !important; 
+  font-size: 28px;
+  margin: 0;
+}
+
+.backBtn {
+  text-decoration: none;
+  color: blue !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  border: 2px solid #cccccc; /* Slightly darker border to anchor cards */
+  background-color: #f9f9f9 !important;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 12px;
+}
+
+/* Company Names styling fixed to sharp dark color */
+.cardHeader h3 {
+  color: #000000 !important;
+  font-size: 20px;
+  margin: 0;
+}
+
+.statusBadge {
+  background-color: #ccffcc !important;
+  color: green !important;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 6px 12px;
+}
+
+/* Inner descriptions styled charcoal black for visibility */
+.card p {
+  color: #222222 !important; 
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card p strong {
+  color: #000000 !important;
+}
+
+.scheduleBtn {
+  margin-top: 10px;
+  background-color: blue !important;
+  color: white !important;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.scheduleBtn:hover {
+  background-color: darkblue !important;
+}

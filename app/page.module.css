@@ -1,0 +1,253 @@
+/* Page Setup with Light Background Accent */
+.page {
+  font-family: Arial, sans-serif;
+  background-color: #fcfcfc;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* 🧭 Navigation Layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: white;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.logoText {
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+}
+
+.blueText {
+  color: blue;
+}
+
+.greenText {
+  color: green;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navLinkForCollectors {
+  text-decoration: none;
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.loginBtn {
+  text-decoration: none;
+  color: blue;
+  border: 2px solid blue;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* ⚡ Main Dynamic Hero Grid Layout */
+.main {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+/* Left Content Area */
+.heroLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 46px;
+  line-height: 1.2;
+  color: #111111;
+  margin: 0;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555555;
+  margin: 0;
+}
+
+/* Quick Search Container Box (Fills empty area below text) */
+.quickSearchBox {
+  background-color: white;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.quickSearchBox h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #111111;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.zoneInput {
+  flex: 1;
+  padding: 12px;
+  background-color: white !important; /* Forces the box background to be pure white */
+  border: 2px solid green !important; /* Gives the input a solid green border */
+  color: #333333 !important;        /* Ensures text you type inside is dark and readable */
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;                    /* Removes default browser glowing borders */
+}
+
+/* This targets the helper text inside the input box before you type anything */
+.zoneInput::placeholder {
+  color: #888888 !important;        /* Keeps the helpful hint text a clear, visible gray */
+  opacity: 1;                       /* Ensures browsers don't wash out the gray color */
+}
+
+
+.searchBtn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Button Layout Below Search Form */
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.blueBtn, .greenBtn {
+  flex: 1;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.blueBtn {
+  background-color: blue;
+}
+
+.greenBtn {
+  background-color: green;
+}
+
+/* Right Side: Dashboard Box */
+.dashboardRight {
+  background-color: white;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.boardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 12px;
+}
+
+.boardHeader h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111111;
+}
+
+.liveIndicator {
+  color: green;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Alert Notification Cards */
+.alertCardDelayed, .alertCardOnTime {
+  display: flex;
+  gap: 15px;
+  background-color: #fafafa;
+  padding: 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+}
+
+.alertCardDelayed {
+  border-left: 5px solid red;
+}
+
+.alertCardOnTime {
+  border-left: 5px solid green;
+}
+
+.badgeDelayed {
+  background-color: #fee2e2;
+  color: red;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 8px;
+  height: fit-content;
+  border-radius: 3px;
+}
+
+.badgeOnTime {
+  background-color: #dcfce7;
+  color: green;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 4px 8px;
+  height: fit-content;
+  border-radius: 3px;
+}
+
+.alertText h4 {
+  margin: 0 0 5px 0;
+  font-size: 15px;
+  color: #111111;
+}
+
+.alertText p {
+  margin: 0;
+  font-size: 13px;
+  color: #555555;
+  line-height: 1.4;
+}

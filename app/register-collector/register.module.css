@@ -1,0 +1,104 @@
+.pageContainer {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.formHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #111111;
+}
+
+.backBtn {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Form Container Card Box */
+.formBox {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.formBox h3 {
+  margin: 0 0 8px 0;
+  font-size: 22px;
+  color: blue;
+}
+
+.subtitle {
+  margin: 0 0 25px 0;
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.4;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #111111;
+}
+
+/* Custom basic inputs with white bg, green borders and gray placeholder text */
+.basicInput, .basicSelect {
+  width: 100%;
+  padding: 12px;
+  background-color: white !important;
+  border: 2px solid green !important;
+  color: #333333 !important;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.basicInput::placeholder {
+  color: #888888 !important;
+  opacity: 1;
+}
+
+.submitBtn {
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.submitBtn:hover {
+  background-color: darkblue;
+}
