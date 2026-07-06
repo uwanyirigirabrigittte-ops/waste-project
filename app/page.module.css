@@ -251,3 +251,78 @@
   color: #555555;
   line-height: 1.4;
 }
+
+.featuresSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px 80px 40px; /* Gives nice spacing at the very bottom of the web page */
+  background-color: white;
+}
+
+.sectionHeading {
+  text-align: center;
+  font-size: 28px;
+  color: #111111 !important;
+  margin-bottom: 40px;
+}
+
+/* 3-Column horizontal rows setup */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Simple cards matching your layout styling choice */
+.featureCard {
+  background-color: #fafafa !important;
+  border: 2px solid #dddddd;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.featureCard h4 {
+  font-size: 18px;
+  color: blue !important; /* Branded blue title texts */
+  margin: 0;
+}
+
+.featureCard p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555555 !important;
+  margin: 0;
+}
+
+/* Decorative feature badge icons inside your color themes */
+.iconCircleBlue, .iconCircleGreen {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+}
+
+.iconCircleBlue {
+  background-color: #e0f2fe; /* Light blue wash tint */
+  border: 1px solid blue;
+}
+
+.iconCircleGreen {
+  background-color: #dcfce7; /* Light green wash tint */
+  border: 1px solid green;
+}
+
+/* Make layout mobile responsive if screen gets too narrow */
+@media (max-width: 768px) {
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}

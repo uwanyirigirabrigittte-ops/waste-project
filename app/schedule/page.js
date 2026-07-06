@@ -4,7 +4,7 @@ export default function SchedulePage() {
   return (
     <div className={styles.pageContainer}>
       <header className={styles.formHeader}>
-        <a href="/" className={styles.backBtn}>← Back to Home</a>
+        
         <h2>Waste Collection Schedule</h2>
       </header>
 

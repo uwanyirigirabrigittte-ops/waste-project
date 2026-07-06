@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: white;
+  border-bottom: 2px solid #eeeeee;
+}
+.logoText { font-size: 24px; font-weight: bold; color: blue; }
+.greenText { color: green; }
+.nav { display: flex; gap: 30px; }
+.navLink { text-decoration: none; color: #333333; font-size: 14px; font-weight: bold; }
+.navLinkForCollectors { text-decoration: none; color: green; font-size: 14px; font-weight: bold; }
+.loginBtn { text-decoration: none; color: blue; border: 2px solid blue; padding: 8px 16px; font-size: 14px; font-weight: bold; border-radius: 4px; }

@@ -3,13 +3,12 @@ import styles from "./register.module.css";
 export default function RegisterCollectorPage() {
   return (
     <div className={styles.pageContainer}>
-      {/* Header back link */}
+    
       <header className={styles.formHeader}>
-        <a href="/" className={styles.backBtn}>← Back to Home</a>
+        
         <h2>Waste Collector Portal</h2>
       </header>
 
-      {/* Basic registration form container */}
       <div className={styles.formBox}>
         <h3>Company Registration Form</h3>
         <p className={styles.subtitle}>Fill in your formal company details to be listed on the GiraIsuku system.</p>

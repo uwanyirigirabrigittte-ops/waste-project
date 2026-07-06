@@ -1,0 +1,100 @@
+.pageContainer {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.formHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.formHeader h2 {
+  margin-left: 800px;
+  font-size: 24px;
+  color: #111111;
+  
+}
+
+.backBtn {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Central Content Container Box */
+.contentBox {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: white;
+  border: 2px solid #dddddd;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.contentBox h3 {
+  margin: 25px 0 10px 0;
+  font-size: 22px;
+  color: blue;
+}
+
+.contentBox h3:first-of-type {
+  margin-top: 0;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* Custom Highlight Box with your chosen green border */
+.highlightBox {
+  background-color: #ffffff;
+  border: 2px solid green;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 25px 0;
+}
+
+.highlightBox h4 {
+  margin: 0 0 8px 0;
+  color: green;
+  font-size: 16px;
+}
+
+.highlightBox p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555555;
+}
+
+/* Bullet list styling */
+.featureList {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.featureList li {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.footerSection {
+  margin-top: 40px;
+  border-top: 1px solid #eeeeee;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  font-size: 15px;
+}

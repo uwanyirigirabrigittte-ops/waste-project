@@ -4,22 +4,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      {/* 🧭 Top Navigation Bar */}
-      <header className={styles.header}>
-        <div className={styles.logoContainer}>
-          <span className={styles.logoText}>Gira<span className={styles.greenText}>Isuku</span></span>
-        </div>
-        <nav className={styles.nav}>
-          <a href="/schedule" className={styles.navLink}>Schedule Pickup</a>
-          <a href="/companies" className={styles.navLink}>Waste Collection Companies</a>
-          <a href="#about" className={styles.navLink}>About Us</a>
-          <a href="/register-collector" className={styles.navLinkForCollectors}>For Collectors</a>
-        </nav>
-        <div className={styles.authContainer}>
-          <a href="#login" className={styles.loginBtn}>Login / Register</a>
-        </div>
-      </header>
-
+     
       {/* ⚡ Split Screen Hero Section */}
       <main className={styles.main}>
         
@@ -78,6 +63,34 @@ export default function Home() {
         </section>
 
       </main>
+            {/* Add this right below your </main> tag */}
+      <section className={styles.featuresSection}>
+        <h2 className={styles.sectionHeading}>How GiraIsuku Keeps Your Neighborhood Clean</h2>
+        
+        <div className={styles.featuresGrid}>
+          {/* Card 1 */}
+          <div className={styles.featureCard}>
+            <div className={styles.iconCircleBlue}>📍</div>
+            <h4>Know Your Route</h4>
+            <p>Enter your unique street code or neighborhood name to find exactly which licensed operator services your gate.</p>
+          </div>
+
+          {/* Card 2 */}
+          <div className={styles.featureCard}>
+            <div className={styles.iconCircleGreen}>📢</div>
+            <h4>Real-Time Alerts</h4>
+            <p>No more waiting blindly. Get immediate notifications from companies if mechanical breakdowns or traffic cause delays.</p>
+          </div>
+
+          {/* Card 3 */}
+          <div className={styles.featureCard}>
+            <div className={styles.iconCircleBlue}>🗓️</div>
+            <h4>Flexible Scheduling</h4>
+            <p>Need a bulk pickup or missed your regular trash morning? Book a direct, off-schedule collection window in minutes.</p>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
