@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 2px solid #eeeeee;
+  padding: 30px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: auto; /* ⬅️ This keeps the footer pushed to the bottom even on short pages */
+}
+
+.footer p {
+  font-size: 14px;
+  color: #333333 !important;
+  font-weight: bold;
+  margin: 0;
+}
+
+.blueText {
+  color: blue;
+}
+
+.footerNote {
+  font-size: 13px !important;
+  color: green !important;
+  font-style: italic;
+}

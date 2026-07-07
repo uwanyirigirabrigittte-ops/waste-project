@@ -8,7 +8,7 @@ export default function Home() {
       {/* ⚡ Split Screen Hero Section */}
       <main className={styles.main}>
         
-        {/* Left Column: Messages & Search Block */}
+        {/* Left Column: Messages, Search Block, Buttons & Image Frame */}
         <section className={styles.heroLeft}>
           <h1 className={styles.title}>
             Keep Rwanda Clean with <span className={styles.blueText}>GiraIsuku</span>
@@ -19,7 +19,7 @@ export default function Home() {
             and receive instant delay notifications directly from your local sanitation operator.
           </p>
 
-          {/* New Panel Component filling the layout empty space */}
+          {/* Search box container */}
           <div className={styles.quickSearchBox}>
             <h4>Find Collection Days in Your Sector</h4>
             <div className={styles.inputGroup}>
@@ -36,61 +36,63 @@ export default function Home() {
             <a href="/schedule" className={styles.blueBtn}>Check Full Schedule</a>
             <a href="/companies" className={styles.greenBtn}>View Operators</a>
           </div>
+
+          {/* 🖼️ HERO IMAGE ACCENT FRAME */}
+          <div className={styles.heroImageWrapper}>
+            <img 
+              src="/waste.jpeg" 
+              alt="Clean city environment green recycling truck" 
+              className={styles.heroMainImage}
+              width={100}
+              height={100}
+            />
+             <img 
+              src="/waste2.jpeg" 
+              alt="Sanitation workers keeping the city clean" 
+              className={styles.heroMainImage}
+              width={100}
+              height={100}
+            />
+          </div>
         </section>
 
-        {/* Right Column: Balanced Operational Dashboard */}
-        <section className={styles.dashboardRight}>
-          <div className={styles.boardHeader}>
-            <h3>Live Operations Board</h3>
-            <span className={styles.liveIndicator}>● Live Updates</span>
-          </div>
+        {/* 🧱 Right Column: Stacks both cards vertically to remove whitespace errors */}
+        <section className={styles.rightColumnGroup}>
           
-          <div className={styles.alertCardDelayed}>
-            <span className={styles.badgeDelayed}>DELAYED</span>
-            <div className={styles.alertText}>
-              <h4>BAHEZA Ltd — Kicukiro Sector</h4>
-              <p>Delayed due to truck maintenance. Collection rescheduled from 09:00 AM to 02:00 PM today.</p>
+          {/* Live Operations Board Card */}
+          <div className={styles.dashboardRight}>
+            <div className={styles.boardHeader}>
+              <h3>Live Operations Board</h3>
+              <span className={styles.liveIndicator}>● Live Updates</span>
+            </div>
+            
+            <div className={styles.alertCardDelayed}>
+              <span className={styles.badgeDelayed}>DELAYED</span>
+              <div className={styles.alertText}>
+                <h4>BAHEZA Ltd — Kicukiro Sector</h4>
+                <p>Delayed due to truck maintenance. Collection rescheduled from 09:00 AM to 02:00 PM today.</p>
+              </div>
+            </div>
+
+            <div className={styles.alertCardOnTime}>
+              <span className={styles.badgeOnTime}>ON TIME</span>
+              <div className={styles.alertText}>
+                <h4>COPED — Gasabo (Remera Zone)</h4>
+                <p>Trucks currently tracking en route. Please ensure waste bins are placed outside.</p>
+              </div>
             </div>
           </div>
 
-          <div className={styles.alertCardOnTime}>
-            <span className={styles.badgeOnTime}>ON TIME</span>
-            <div className={styles.alertText}>
-              <h4>COPED — Gasabo (Remera Zone)</h4>
-              <p>Trucks currently tracking en route. Please ensure waste bins are placed outside.</p>
-            </div>
+          {/* 📢 Solid, Fully Visible Report Panel Card */}
+          <div className={styles.reportWasteBox}>
+            <h4>Report Uncollected Waste</h4>
+            <p>Has your trash container been left past your scheduled pickup day? Notify your local operator instantly.</p>
+            <a href="/schedule" className={styles.reportBtn}>File a Report</a>
           </div>
+
         </section>
-
+      
       </main>
-            {/* Add this right below your </main> tag */}
-      <section className={styles.featuresSection}>
-        <h2 className={styles.sectionHeading}>How GiraIsuku Keeps Your Neighborhood Clean</h2>
-        
-        <div className={styles.featuresGrid}>
-          {/* Card 1 */}
-          <div className={styles.featureCard}>
-            <div className={styles.iconCircleBlue}>📍</div>
-            <h4>Know Your Route</h4>
-            <p>Enter your unique street code or neighborhood name to find exactly which licensed operator services your gate.</p>
-          </div>
-
-          {/* Card 2 */}
-          <div className={styles.featureCard}>
-            <div className={styles.iconCircleGreen}>📢</div>
-            <h4>Real-Time Alerts</h4>
-            <p>No more waiting blindly. Get immediate notifications from companies if mechanical breakdowns or traffic cause delays.</p>
-          </div>
-
-          {/* Card 3 */}
-          <div className={styles.featureCard}>
-            <div className={styles.iconCircleBlue}>🗓️</div>
-            <h4>Flexible Scheduling</h4>
-            <p>Need a bulk pickup or missed your regular trash morning? Book a direct, off-schedule collection window in minutes.</p>
-          </div>
-        </div>
-      </section>
-
     </div>
   );
 }

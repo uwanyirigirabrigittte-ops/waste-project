@@ -30,7 +30,7 @@ export default function CompaniesPage() {
       zone: "National Level (Green Park Bugesera)",
       type: "Electronic Waste (E-Waste)",
       status: "Active",
-      contact: "+250 252 XXX XXX",
+      contact: "+250 78X XXX XXX",
       days: ["Every First Saturday of the Month (Umuganda Day)"]
     }
   ];

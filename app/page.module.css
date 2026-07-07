@@ -7,59 +7,6 @@
   min-height: 100vh;
 }
 
-/* 🧭 Navigation Layout */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 80px;
-  background-color: white;
-  border-bottom: 2px solid #eeeeee;
-}
-
-.logoText {
-  font-size: 24px;
-  font-weight: bold;
-  color: blue;
-}
-
-.blueText {
-  color: blue;
-}
-
-.greenText {
-  color: green;
-}
-
-.nav {
-  display: flex;
-  gap: 30px;
-}
-
-.navLink {
-  text-decoration: none;
-  color: #333333;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.navLinkForCollectors {
-  text-decoration: none;
-  color: green;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.loginBtn {
-  text-decoration: none;
-  color: blue;
-  border: 2px solid blue;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
 /* ⚡ Main Dynamic Hero Grid Layout */
 .main {
   display: grid;
@@ -86,6 +33,14 @@
   margin: 0;
 }
 
+.blueText {
+  color: blue;
+}
+
+.greenText {
+  color: green;
+}
+
 .description {
   font-size: 16px;
   line-height: 1.6;
@@ -93,7 +48,7 @@
   margin: 0;
 }
 
-/* Quick Search Container Box (Fills empty area below text) */
+/* Quick Search Container Box */
 .quickSearchBox {
   background-color: white;
   border: 2px solid #dddddd;
@@ -117,20 +72,18 @@
 .zoneInput {
   flex: 1;
   padding: 12px;
-  background-color: white !important; /* Forces the box background to be pure white */
-  border: 2px solid green !important; /* Gives the input a solid green border */
-  color: #333333 !important;        /* Ensures text you type inside is dark and readable */
+  background-color: white !important;
+  border: 2px solid green !important;
+  color: #333333 !important;
   font-size: 14px;
   border-radius: 4px;
-  outline: none;                    /* Removes default browser glowing borders */
+  outline: none;
 }
 
-/* This targets the helper text inside the input box before you type anything */
 .zoneInput::placeholder {
-  color: #888888 !important;        /* Keeps the helpful hint text a clear, visible gray */
-  opacity: 1;                       /* Ensures browsers don't wash out the gray color */
+  color: #888888 !important;
+  opacity: 1;
 }
-
 
 .searchBtn {
   background-color: blue;
@@ -168,6 +121,24 @@
 .greenBtn {
   background-color: green;
 }
+
+.heroImageWrapper {
+  width: 100%;             /* Stretches the outer container box to 100% full width */
+  margin-top: 25px;        /* Creates a balanced gap between the buttons and the photos */
+  display: flex;           /* Aligns the two images horizontally side-by-side */
+  gap: 15px;               /* Adds a clean spacing channel between the two photos */
+  height: 220px;           /* Sets the exact height to match your Live Operations Board */
+}
+
+.heroMainImage {
+  flex: 1;                 /* Forces both images to share the space equally (50% width each) */
+  height: 100%;            /* Fills the 220px container height completely */
+  object-fit: cover;       /* Dynamically scales and crops your images so they don't stretch or warp */
+  border: 2px solid #dddddd; /* Applies a clean gray border framework to each picture */
+  border-radius: 6px;      /* Rounds the corners smoothly to match your text boxes */
+  display: block;
+}
+
 
 /* Right Side: Dashboard Box */
 .dashboardRight {
@@ -252,77 +223,90 @@
   line-height: 1.4;
 }
 
-.featuresSection {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 60px 40px 80px 40px; /* Gives nice spacing at the very bottom of the web page */
-  background-color: white;
-}
+/* ==========================================================================
+   🌲 BASELINE ACCENT FOOTER STYLING
+   ========================================================================== */
 
-.sectionHeading {
-  text-align: center;
-  font-size: 28px;
-  color: #111111 !important;
-  margin-bottom: 40px;
-}
-
-/* 3-Column horizontal rows setup */
-.featuresGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-
-/* Simple cards matching your layout styling choice */
-.featureCard {
-  background-color: #fafafa !important;
-  border: 2px solid #dddddd;
-  border-radius: 6px;
-  padding: 30px;
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 2px solid #eeeeee; /* Creates a clean separating divider line */
+  padding: 30px 40px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  gap: 8px;
+  margin-top: 40px; /* Pushes the baseline down giving your layout breathing room */
 }
 
-.featureCard h4 {
-  font-size: 18px;
-  color: blue !important; /* Branded blue title texts */
-  margin: 0;
-}
-
-.featureCard p {
+.footer p {
   font-size: 14px;
-  line-height: 1.5;
-  color: #555555 !important;
+  color: #333333 !important;
+  font-weight: bold;
   margin: 0;
 }
 
-/* Decorative feature badge icons inside your color themes */
-.iconCircleBlue, .iconCircleGreen {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 22px;
+.footerNote {
+  font-size: 13px !important;
+  color: green !important; /* Branded green helper note */
+  font-style: italic;
+}
+/* ==========================================================================
+   📦 FIXED VERTICAL COLUMN STACK & VISIBLE TEXT STYLES
+   ========================================================================== */
+
+/* This is the master wrapper that stops boxes from crashing into each other */
+.rightColumnGroup {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 25px !important; /* Pushes the reporting box cleanly below the dashboard */
+  width: 100% !important;
 }
 
-.iconCircleBlue {
-  background-color: #e0f2fe; /* Light blue wash tint */
-  border: 1px solid blue;
+/* Forces the reporting container card to have high-contrast background visibility */
+.reportWasteBox {
+  background-color: #ffffff !important;
+  border: 2px solid #dddddd !important;
+  border-radius: 8px !important;
+  padding: 25px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important;
 }
 
-.iconCircleGreen {
-  background-color: #dcfce7; /* Light green wash tint */
-  border: 1px solid green;
+/* Explicitly colors the reporting header text a sharp, visible blue */
+.reportWasteBox h4 {
+  margin: 0 !important;
+  font-size: 16px !important;
+  color: blue !important;
+  font-weight: bold !important;
 }
 
-/* Make layout mobile responsive if screen gets too narrow */
-@media (max-width: 768px) {
-  .featuresGrid {
-    grid-template-columns: 1fr;
-  }
+/* Explicitly colors the description text a visible charcoal black */
+.reportWasteBox p {
+  margin: 0 !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #222222 !important; /* True high-contrast readable color */
 }
+
+/* Solid basic button style matching your layout palette */
+.reportBtn {
+  text-decoration: none !important;
+  background-color: white !important;
+  color: red !important;
+  border: 2px solid red !important;
+  text-align: center !important;
+  padding: 12px !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  border-radius: 4px !important;
+  margin-top: 5px !important;
+  display: block !important;
+}
+
+.reportBtn:hover {
+  background-color: #fee2e2 !important;
+}
+

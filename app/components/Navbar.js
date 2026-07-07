@@ -4,13 +4,13 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
-        {/* Clicking the main logo text will also safely take users back home */}
+        
         <a href="/" className={styles.logoLink}>
           <span className={styles.logoText}>Gira<span className={styles.greenText}>Isuku</span></span>
         </a>
       </div>
       <nav className={styles.nav}>
-        {/* 🏠 New Home Link Added Here */}
+        
         <a href="/" className={styles.navLink}>Home</a>
         
         <a href="/schedule" className={styles.navLink}>Schedule Pickup</a>
