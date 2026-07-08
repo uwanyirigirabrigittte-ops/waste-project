@@ -28,7 +28,6 @@ export default function SchedulePage() {
             <input type="text" placeholder="e.g., Remera, Kimironko, Niboye" className={styles.basicInput} required />
           </div>
 
-          {/* 📍 The Optional Street / House Code Field */}
           <div className={styles.fieldGroup}>
             <label>Location Identifier / Street Code (Optional)</label>
             <input type="text" placeholder="e.g., KK 506 St or KG 250 St" className={styles.basicInput} />

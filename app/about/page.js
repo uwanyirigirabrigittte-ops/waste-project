@@ -3,20 +3,19 @@ import styles from "./about.module.css";
 export default function AboutPage() {
   return (
     <div className={styles.pageContainer}>
-      {/* Header back link */}
+      
       <header className={styles.formHeader}>
        
         <h2>About GiraIsuku</h2>
       </header>
 
-      {/* Main Content Box */}
+    
       <div className={styles.contentBox}>
         <h3>Our Mission</h3>
         <p className={styles.paragraph}>
           <strong>GiraIsuku</strong> is a smart waste management platform built specifically to bridge the communication gap between citizens and waste collection companies in Rwanda. 
         </p>
 
-        {/* Highlighted box with a green border */}
         <div className={styles.highlightBox}>
           <h4>The Problem We Solve</h4>
           <p>

@@ -80,7 +80,7 @@
 }
 
 
-/* Dark transparent dim background that blocks screen interaction */
+
 .modalOverlay {
   position: fixed;
   top: 0;
@@ -94,10 +94,10 @@
   z-index: 1000;
 }
 
-/* White popup card center screen */
+
 .modalContent {
   background-color: white !important;
-  border: 2px solid green !important; /* The signature green outline */
+  border: 2px solid green !important; 
   border-radius: 8px;
   width: 100%;
   max-width: 480px;
@@ -115,8 +115,7 @@
 }
 
 .modalHeader h3 {
-  color: blue !important; /* Signature blue color */
-  margin: 0;
+  color: blue !important; 
   font-size: 22px;
 }
 
@@ -135,24 +134,24 @@
 
 
 .modalBody p {
-  color: #111111 !important; /* Forces Assigned Zone text to be solid visible black */
+  color: #111111 !important; 
   font-size: 15px !important;
   line-height: 1.5;
   margin: 0;
 }
 
 .modalBody p strong {
-  color: #000000 !important; /* Makes the "Assigned Zone:" label stand out bold */
+  color: #000000 !important; 
 }
 
 .modalBody h4 {
-  color: #000000 !important; /* Forces "Weekly Scheduled Pickup Days:" to be clear black */
+  color: #000000 !important; 
   margin: 15px 0 8px 0 !important;
   font-size: 16px !important;
 }
 
 .scheduleItem {
-  color: #222222 !important; /* Forces the bullet points (like Umuganda Day) to be completely visible dark charcoal */
+  color: #222222 !important; 
   font-weight: bold !important;
   font-size: 15px !important;
   margin-bottom: 8px !important;
@@ -160,7 +159,7 @@
 
 .noticeText {
   font-size: 13px !important;
-  color: #555555 !important; /* Changes the bottom notice note to a readable gray-black instead of fading out */
+  color: #555555 !important; 
   line-height: 1.4 !important;
   margin-top: 20px !important;
   font-style: italic !important;

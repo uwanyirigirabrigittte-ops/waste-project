@@ -60,7 +60,7 @@ export default function CompaniesPage() {
         ))}
       </div>
 
-      {/* 📦 THE POPUP BOX MODAL */}
+      
       {activeSchedule && (
         <div className={styles.modalOverlay}>
           <div className={styles.modalContent}>

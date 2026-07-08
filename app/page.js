@@ -5,10 +5,10 @@ export default function Home() {
   return (
     <div className={styles.page}>
      
-      {/* ⚡ Split Screen Hero Section */}
+      
       <main className={styles.main}>
         
-        {/* Left Column: Messages, Search Block, Buttons & Image Frame */}
+       
         <section className={styles.heroLeft}>
           <h1 className={styles.title}>
             Keep Rwanda Clean with <span className={styles.blueText}>GiraIsuku</span>
@@ -19,7 +19,7 @@ export default function Home() {
             and receive instant delay notifications directly from your local sanitation operator.
           </p>
 
-          {/* Search box container */}
+         
           <div className={styles.quickSearchBox}>
             <h4>Find Collection Days in Your Sector</h4>
             <div className={styles.inputGroup}>
@@ -37,7 +37,7 @@ export default function Home() {
             <a href="/companies" className={styles.greenBtn}>View Operators</a>
           </div>
 
-          {/* 🖼️ HERO IMAGE ACCENT FRAME */}
+        
           <div className={styles.heroImageWrapper}>
             <img 
               src="/waste.jpeg" 
@@ -56,10 +56,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 🧱 Right Column: Stacks both cards vertically to remove whitespace errors */}
+        
         <section className={styles.rightColumnGroup}>
           
-          {/* Live Operations Board Card */}
+        
           <div className={styles.dashboardRight}>
             <div className={styles.boardHeader}>
               <h3>Live Operations Board</h3>
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 📢 Solid, Fully Visible Report Panel Card */}
+         
           <div className={styles.reportWasteBox}>
             <h4>Report Uncollected Waste</h4>
             <p>Has your trash container been left past your scheduled pickup day? Notify your local operator instantly.</p>

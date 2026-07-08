@@ -27,7 +27,7 @@
   font-size: 16px;
 }
 
-/* Form Container Card Box */
+
 .formBox {
   max-width: 550px;
   margin: 0 auto;
@@ -68,7 +68,7 @@
   color: #111111;
 }
 
-/* White bg, green borders and gray placeholder text */
+
 .basicInput, .basicSelect {
   width: 100%;
   padding: 12px;

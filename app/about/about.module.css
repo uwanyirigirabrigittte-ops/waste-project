@@ -28,7 +28,7 @@
   font-size: 16px;
 }
 
-/* Central Content Container Box */
+
 .contentBox {
   max-width: 650px;
   margin: 0 auto;
@@ -54,7 +54,6 @@
   color: #333333;
 }
 
-/* Custom Highlight Box with your chosen green border */
 .highlightBox {
   background-color: #ffffff;
   border: 2px solid green;
@@ -76,7 +75,6 @@
   color: #555555;
 }
 
-/* Bullet list styling */
 .featureList {
   padding-left: 20px;
   margin: 15px 0;

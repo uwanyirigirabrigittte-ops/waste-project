@@ -1,4 +1,4 @@
-/* Page Setup with Light Background Accent */
+
 .page {
   font-family: Arial, sans-serif;
   background-color: #fcfcfc;
@@ -7,7 +7,7 @@
   min-height: 100vh;
 }
 
-/* ⚡ Main Dynamic Hero Grid Layout */
+
 .main {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -18,7 +18,7 @@
   align-items: flex-start;
 }
 
-/* Left Content Area */
+
 .heroLeft {
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
   margin: 0;
 }
 
-/* Quick Search Container Box */
+
 .quickSearchBox {
   background-color: white;
   border: 2px solid #dddddd;
@@ -96,7 +96,7 @@
   border-radius: 4px;
 }
 
-/* Button Layout Below Search Form */
+
 .buttonGroup {
   display: flex;
   gap: 15px;
@@ -123,24 +123,24 @@
 }
 
 .heroImageWrapper {
-  width: 100%;             /* Stretches the outer container box to 100% full width */
-  margin-top: 25px;        /* Creates a balanced gap between the buttons and the photos */
-  display: flex;           /* Aligns the two images horizontally side-by-side */
-  gap: 15px;               /* Adds a clean spacing channel between the two photos */
-  height: 220px;           /* Sets the exact height to match your Live Operations Board */
+  width: 100%;             
+  margin-top: 25px;       
+  display: flex;           
+  gap: 15px;               
+  height: 220px;           
 }
 
 .heroMainImage {
-  flex: 1;                 /* Forces both images to share the space equally (50% width each) */
-  height: 100%;            /* Fills the 220px container height completely */
-  object-fit: cover;       /* Dynamically scales and crops your images so they don't stretch or warp */
-  border: 2px solid #dddddd; /* Applies a clean gray border framework to each picture */
-  border-radius: 6px;      /* Rounds the corners smoothly to match your text boxes */
+  flex: 1;                 
+  height: 100%;            
+  object-fit: cover;       
+  border: 2px solid #dddddd; 
+  border-radius: 6px;     
   display: block;
 }
 
 
-/* Right Side: Dashboard Box */
+
 .dashboardRight {
   background-color: white;
   border: 2px solid #dddddd;
@@ -172,7 +172,7 @@
   font-weight: bold;
 }
 
-/* Alert Notification Cards */
+
 .alertCardDelayed, .alertCardOnTime {
   display: flex;
   gap: 15px;
@@ -223,20 +223,18 @@
   line-height: 1.4;
 }
 
-/* ==========================================================================
-   🌲 BASELINE ACCENT FOOTER STYLING
-   ========================================================================== */
+
 
 .footer {
   width: 100%;
   background-color: #ffffff;
-  border-top: 2px solid #eeeeee; /* Creates a clean separating divider line */
+  border-top: 2px solid #eeeeee; 
   padding: 30px 40px;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 40px; /* Pushes the baseline down giving your layout breathing room */
+  margin-top: 40px; 
 }
 
 .footer p {
@@ -248,22 +246,19 @@
 
 .footerNote {
   font-size: 13px !important;
-  color: green !important; /* Branded green helper note */
+  color: green !important; 
   font-style: italic;
 }
-/* ==========================================================================
-   📦 FIXED VERTICAL COLUMN STACK & VISIBLE TEXT STYLES
-   ========================================================================== */
 
-/* This is the master wrapper that stops boxes from crashing into each other */
+
 .rightColumnGroup {
   display: flex !important;
   flex-direction: column !important;
-  gap: 25px !important; /* Pushes the reporting box cleanly below the dashboard */
+  gap: 25px !important; 
   width: 100% !important;
 }
 
-/* Forces the reporting container card to have high-contrast background visibility */
+
 .reportWasteBox {
   background-color: #ffffff !important;
   border: 2px solid #dddddd !important;
@@ -275,7 +270,7 @@
   box-shadow: 0 4px 6px rgba(0,0,0,0.02) !important;
 }
 
-/* Explicitly colors the reporting header text a sharp, visible blue */
+
 .reportWasteBox h4 {
   margin: 0 !important;
   font-size: 16px !important;
@@ -283,15 +278,15 @@
   font-weight: bold !important;
 }
 
-/* Explicitly colors the description text a visible charcoal black */
+
 .reportWasteBox p {
   margin: 0 !important;
   font-size: 14px !important;
   line-height: 1.5 !important;
-  color: #222222 !important; /* True high-contrast readable color */
+  color: #222222 !important; 
 }
 
-/* Solid basic button style matching your layout palette */
+
 .reportBtn {
   text-decoration: none !important;
   background-color: white !important;
